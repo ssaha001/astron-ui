@@ -1,32 +1,37 @@
 [
   {
-    "id": "erlang",
-    "label": "erlang",
-    "value": 51,
-    "color": "hsl(208, 70%, 50%)"
+    "id": "Pre-Design",
+    "label": "Pre-Design",
+    "value": 11
   },
   {
-    "id": "java",
-    "label": "java",
-    "value": 109,
-    "color": "hsl(332, 70%, 50%)"
+    "id": "Design",
+    "label": "Design",
+    "value": 1
   },
   {
-    "id": "scala",
-    "label": "scala",
-    "value": 90,
-    "color": "hsl(317, 70%, 50%)"
+    "id": "Pre-Construction",
+    "label": "Pre-Construction",
+    "value": 5
   },
   {
-    "id": "make",
-    "label": "make",
-    "value": 311,
-    "color": "hsl(113, 70%, 50%)"
+    "id": "Construction",
+    "label": "Construction",
+    "value": 8
   },
   {
-    "id": "elixir",
-    "label": "elixir",
-    "value": 411,
-    "color": "hsl(21, 70%, 50%)"
+    "id": "Post-Construction",
+    "label": "Post-Construction",
+    "value": 15
+  },
+  {
+    "id": "Permitting",
+    "label": "Permitting",
+    "value": 7
+  },
+  {
+    "id": "Completed",
+    "label": "Completed",
+    "value": 20
   }
 ]
