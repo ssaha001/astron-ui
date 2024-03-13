@@ -2,7 +2,7 @@ import { ResponsivePie } from "@nivo/pie";
 const StagesPieChart = ({ data }) => (
   <ResponsivePie
     data={data}
-    margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+    margin={{ top: 40, right: 80, bottom: 90, left: 60 }}
     cornerRadius={3}
     activeOuterRadiusOffset={8}
     colors={{ scheme: "paired" }}
@@ -101,7 +101,7 @@ const StagesPieChart = ({ data }) => (
         itemWidth: 100,
         itemHeight: 18,
         itemTextColor: "#999",
-        itemDirection: "left-to-right",
+        itemDirection: 'top-to-bottom',
         itemOpacity: 1,
         symbolSize: 18,
         symbolShape: "circle",
