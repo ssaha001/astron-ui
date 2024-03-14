@@ -25,10 +25,10 @@ const DashboardHeader = ({ current }) => {
           </Nav.Link>
           <Nav.Link
             as={Link}
-            className={current === "Get Products" ? "active-link" : ""}
-            to="/getProducts"
+            className={current === "Get Materials" ? "active-link" : ""}
+            to="/materials"
           >
-            Get Products
+            Get Materials
           </Nav.Link>
           <Nav.Link
             as={Link}
