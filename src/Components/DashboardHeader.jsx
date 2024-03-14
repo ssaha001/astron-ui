@@ -12,35 +12,35 @@ const DashboardHeader = ({ current }) => {
           <Nav.Link
             as={Link}
             className={current === "Dashboard" ? "active-link" : ""}
-            to="/dashboard/home"
+            to="/dashboard"
           >
             Dashboard
           </Nav.Link>
           <Nav.Link
             as={Link}
             className={current === "Projects" ? "active-link" : ""}
-            to="/dashboard/home"
+            to="/projects"
           >
             Projects
           </Nav.Link>
           <Nav.Link
             as={Link}
             className={current === "Get Products" ? "active-link" : ""}
-            to="/dashboard/profile"
+            to="/getProducts"
           >
             Get Products
           </Nav.Link>
           <Nav.Link
             as={Link}
             className={current === "Financing" ? "active-link" : ""}
-            to="/dashboard/messages"
+            to="/financing"
           >
             Financing
           </Nav.Link>
           <Nav.Link
             as={Link}
             className={current === "Scheduling" ? "active-link" : ""}
-            to="/dashboard/settings"
+            to="/scheduling"
           >
             Scheduling
           </Nav.Link>
