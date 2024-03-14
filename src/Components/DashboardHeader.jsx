@@ -40,7 +40,7 @@ const DashboardHeader = ({ current }) => {
           <Nav.Link
             as={Link}
             className={current === "Scheduling" ? "active-link" : ""}
-            to="/scheduling"
+            to="/schedulin"
           >
             Scheduling
           </Nav.Link>
