@@ -34,7 +34,6 @@ const Scheduling = () => {
       })
     );
   }
-  console.log(dates);
   return (
     <Container>
       <Navbar bg="light" expand="lg">
@@ -64,18 +63,33 @@ const Scheduling = () => {
                   <td>{employee.name}</td>
                   {dates.map((date) => (
                     <td>
-                      {showPopup && (
-                        <div className="popup">{employee[date]}</div>
-                      )}
                       <OverlayTrigger
                         placement="top"
                         trigger="hover"
                         delayShow={200}
                         overlay={
-                          <Tooltip id="tooltip">{employee[date]}</Tooltip>
+                          <Tooltip id="tooltip">
+                            {typeof employee[date] === "string" ||
+                            !employee[date] ? (
+                              employee[date] || "Available"
+                            ) : (
+                              <div>
+                                {employee[date]["location"]} :{" "}
+                                {employee[date]["time"]}
+                              </div>
+                            )}
+                          </Tooltip>
                         }
                       >
-                        <div className={`circle-${employee[date]}`} />
+                        <div
+                          className={`circle-${
+                            typeof employee[date] === "string"
+                              ? employee[date]
+                              : !employee[date]
+                              ? "Available"
+                              : "Scheduled"
+                          }`}
+                        />
                       </OverlayTrigger>
                     </td>
                   ))}

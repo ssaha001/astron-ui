@@ -1,112 +1,214 @@
 [
   {
     "name": "Alice",
-    "2024-03-13": "Available",
-    "2024-03-14": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-15": "Unavailable",
-    "2024-03-16": "Scheduled",
-    "2024-03-17": "Available",
+    "2024-03-16": "Available",
+    "2024-03-17": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-18": "Unavailable",
-    "2024-03-19": "Scheduled",
-    "2024-03-20": "Available"
+    "2024-03-19": "Available",
+    "2024-03-20": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    }
   },
   {
     "name": "Bob",
-    "2024-03-13": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-14": "Unavailable",
-    "2024-03-15": "Scheduled",
-    "2024-03-16": "Available",
+    "2024-03-15": "Available",
+    "2024-03-16": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-17": "Unavailable",
-    "2024-03-18": "Scheduled",
-    "2024-03-19": "Available",
+    "2024-03-18": "Available",
+    "2024-03-19": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-20": "Unavailable"
   },
   {
     "name": "Charlie",
-    "2024-03-13": "Available",
-    "2024-03-14": "Scheduled",
-    "2024-03-15": "Available",
-    "2024-03-16": "Unavailable",
-    "2024-03-17": "Scheduled",
-    "2024-03-18": "Available",
-    "2024-03-19": "Unavailable",
-    "2024-03-20": "Scheduled"
-  },
-  {
-    "name": "David",
-    "2024-03-13": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-14": "Available",
-    "2024-03-15": "Unavailable",
-    "2024-03-16": "Scheduled",
+    "2024-03-15": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-16": "Unavailable",
     "2024-03-17": "Available",
-    "2024-03-18": "Unavailable",
-    "2024-03-19": "Scheduled",
+    "2024-03-18": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-19": "Unavailable",
     "2024-03-20": "Available"
   },
   {
-    "name": "Eve",
-    "2024-03-13": "Available",
-    "2024-03-14": "Unavailable",
-    "2024-03-15": "Scheduled",
+    "name": "David",
+    "2024-03-13": {
+      "name": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-15": "Unavailable",
     "2024-03-16": "Available",
-    "2024-03-17": "Unavailable",
-    "2024-03-18": "Scheduled",
+    "2024-03-17": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-18": "Unavailable",
     "2024-03-19": "Available",
+    "2024-03-20": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    }
+  },
+  {
+    "name": "Eve",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": "Unavailable",
+    "2024-03-15": "Available",
+    "2024-03-16": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-17": "Unavailable",
+    "2024-03-18": "Available",
+    "2024-03-19": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-20": "Unavailable"
   },
   {
     "name": "Frank",
-    "2024-03-13": "Available",
-    "2024-03-14": "Scheduled",
-    "2024-03-15": "Available",
-    "2024-03-16": "Unavailable",
-    "2024-03-17": "Scheduled",
-    "2024-03-18": "Available",
-    "2024-03-19": "Unavailable",
-    "2024-03-20": "Scheduled"
-  },
-  {
-    "name": "Grace",
-    "2024-03-13": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-14": "Available",
-    "2024-03-15": "Unavailable",
-    "2024-03-16": "Scheduled",
+    "2024-03-15": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-16": "Unavailable",
     "2024-03-17": "Available",
-    "2024-03-18": "Unavailable",
-    "2024-03-19": "Scheduled",
+    "2024-03-18": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-19": "Unavailable",
     "2024-03-20": "Available"
   },
   {
-    "name": "Hank",
-    "2024-03-13": "Available",
-    "2024-03-14": "Unavailable",
-    "2024-03-15": "Scheduled",
+    "name": "Grace",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-15": "Unavailable",
     "2024-03-16": "Available",
-    "2024-03-17": "Unavailable",
-    "2024-03-18": "Scheduled",
+    "2024-03-17": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-18": "Unavailable",
     "2024-03-19": "Available",
+    "2024-03-20": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    }
+  },
+  {
+    "name": "Hank",
+    "2024-03-13": {
+      "name": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": "Unavailable",
+    "2024-03-15": "Available",
+    "2024-03-16": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-17": "Unavailable",
+    "2024-03-18": "Available",
+    "2024-03-19": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-20": "Unavailable"
   },
   {
     "name": "Ivy",
-    "2024-03-13": "Available",
-    "2024-03-14": "Scheduled",
-    "2024-03-15": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": "Available",
+    "2024-03-15": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-16": "Unavailable",
-    "2024-03-17": "Scheduled",
-    "2024-03-18": "Available",
+    "2024-03-17": "Available",
+    "2024-03-18": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-19": "Unavailable",
-    "2024-03-20": "Scheduled"
+    "2024-03-20": "Available"
   },
   {
     "name": "Jack",
-    "2024-03-13": "Available",
-    "2024-03-14": "Available",
+    "2024-03-13": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
+    "2024-03-14": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-15": "Unavailable",
-    "2024-03-16": "Scheduled",
-    "2024-03-17": "Available",
+    "2024-03-16": "Available",
+    "2024-03-17": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    },
     "2024-03-18": "Unavailable",
-    "2024-03-19": "Scheduled",
-    "2024-03-20": "Available"
+    "2024-03-19": "Available",
+    "2024-03-20": {
+      "location": "Queen street",
+      "time": "9am-5pm"
+    }
   }
 ]
