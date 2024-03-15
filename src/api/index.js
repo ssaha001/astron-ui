@@ -1,3 +1,3 @@
 import { signupUser, signinUser } from "./userApi";
-
-export { signupUser, signinUser };
+import { addEmployee, getEmployee, assignEmployee } from "./employeeApi";
+export { signupUser, signinUser , addEmployee, getEmployee, assignEmployee};
