@@ -17,13 +17,6 @@ function Layout({ children }) {
       <main>
         <Container>{children}</Container>
       </main>
-      <footer>
-        <Navbar bg="light" expand="lg">
-          <Container>
-            <Navbar.Text>Footer - Bottom Part</Navbar.Text>
-          </Container>
-        </Navbar>
-      </footer>
     </div>
   );
 }
