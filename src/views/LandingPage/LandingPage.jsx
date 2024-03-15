@@ -2,35 +2,19 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Import the Link component
 import "bootstrap/dist/css/bootstrap.min.css";
-
 function LandingPage() {
   return (
-    <div>
-      <Container>
+<div>
+  <Container>
         <Row className="mt-5">
-          <Col>
-            <h1>Welcome to Our Website!</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              accumsan justo eget ligula aliquet, a dapibus mi condimentum.
-            </p>
-            <Row style={{ display: "flex", flexDirection: "row" }}>
-              <Col>
-                <Link to="/signup">
-                  <Button variant="primary">Sign Up</Button>
-                </Link>
-              </Col>
-              <Col>
-                <Link to="/signin">
-                  <Button variant="primary">Sign In</Button>
-                </Link>
-              </Col>
-            </Row>
-          </Col>
-          <Col>
-            <img src="https://via.placeholder.com/400" alt="placeholder" />
-          </Col>
-        </Row>
+          <Col className="text-center">
+            <h1>Stay on top of your building</h1>
+            <h1>projects with us!</h1>
+            <img src="https://live.staticflickr.com/65535/53588740710_3721fd3c5a_b.jpg" width="500" className="img-fluid" alt="A roof"/>
+            <br/>
+     <Button type="button" class="btn btn-lg btn-success mt-3">Go to Dashboard</Button>
+     </Col>
+     </Row>
       </Container>
     </div>
   );
