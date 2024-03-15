@@ -1,18 +1,14 @@
 class AuthService {
   constructor() {
     this.isAuthenticated = false;
-    this.tokenKey = "authToken";
+    this.tokenKey = "token";
   }
 
-  login(email, password) {
+  setToken(token) {
     // Perform authentication logic, e.g., send login request to server
     // For simplicity, we'll just check if the username is 'user' and password is 'password'
-    if (email === "user@gmail.com" && password === "password") {
-      this.isAuthenticated = true;
-      localStorage.setItem(this.tokenKey, "some-auth-token");
-      return true;
-    }
-    return false;
+    localStorage.setItem(this.tokenKey, token);
+    return true;
   }
 
   logout() {

@@ -1,12 +1,22 @@
 import React, { useState } from "react";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Container, Row, Col, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./userAuthStyles.css";
+import { signupUser } from "../../api";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "../../redux/store";
+import { setUser } from "../../redux/slices/userSlice";
+import authServiceInstance from "../../services/AuthService";
 
 const Signup = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    username: "",
+    fname: "",
+    lname: "",
     email: "",
     password: "",
+    type: "Developer/Contractor",
   });
 
   const handleChange = (e) => {
@@ -20,12 +30,18 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // You can add your form submission logic here
-    console.log("Form submitted:", formData);
-    // Reset form fields
-    setFormData({
-      username: "",
-      email: "",
-      password: "",
+    signupUser(formData).then((res) => {
+      setFormData({
+        fname: "",
+        lname: "",
+        email: "",
+        password: "",
+        type: "Developer/Contractor",
+      });
+      authServiceInstance.setToken(res["user"]["token"]);
+      dispatch(setUser(res["user"]));
+      console.log(res);
+      navigate("/dashboard");
     });
   };
 
@@ -35,19 +51,30 @@ const Signup = () => {
         <Col xs={12} md={6}>
           <h2>Signup</h2>
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formUsername">
-              <Form.Label>Username</Form.Label>
+            <Form.Group controlId="formFname" className="formField">
+              <Form.Label>First Name</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter username"
-                name="username"
-                value={formData.username}
+                placeholder="First Name"
+                name="fname"
+                value={formData.fname}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group controlId="formLname" className="formField">
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Last Name"
+                name="lname"
+                value={formData.lname}
                 onChange={handleChange}
                 required
               />
             </Form.Group>
 
-            <Form.Group controlId="formEmail">
+            <Form.Group controlId="formEmail" className="formField">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
@@ -59,7 +86,7 @@ const Signup = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="formPassword">
+            <Form.Group controlId="formPassword" className="formField">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
@@ -69,6 +96,21 @@ const Signup = () => {
                 onChange={handleChange}
                 required
               />
+            </Form.Group>
+
+            <Form.Group controlId="formType" className="formField">
+              <Form.Label>User Type</Form.Label>
+              <Form.Select
+                name="type"
+                value={formData.type}
+                onChange={handleChange}
+                required
+              >
+                <option value="Developer/Contractor">
+                  Developer/Contractor
+                </option>
+                <option value="Option 1">Supplier</option>
+              </Form.Select>
             </Form.Group>
 
             <Button variant="primary" type="submit">
