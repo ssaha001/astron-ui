@@ -7,6 +7,7 @@ class AuthService {
   setToken(token) {
     // Perform authentication logic, e.g., send login request to server
     // For simplicity, we'll just check if the username is 'user' and password is 'password'
+    this.isAuthenticated = true;
     localStorage.setItem(this.tokenKey, token);
     return true;
   }
@@ -20,8 +21,10 @@ class AuthService {
     return localStorage.getItem(this.tokenKey);
   }
 
-  isAuthenticated() {
-    return this.isAuthenticated;
+  isUserAuthenticated() {
+    if (localStorage.getItem(this.tokenKey)!==null) {
+      return true;
+    }return false;
   }
 }
 

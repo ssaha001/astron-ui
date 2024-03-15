@@ -10,6 +10,7 @@ import {
 } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import ProtectedRoute from "./ProtectedRoute";
 //import AboutPage from "./AboutPage";
 
 function App() {
@@ -20,10 +21,10 @@ function App() {
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/signin" exact element={<Signin />} />
-          <Route path="/dashboard" exact element={<Dashboard />} />
-          <Route path="/materials" exact element={<Materials />} />
-          <Route path="/scheduling" exact element={<Scheduling />} />
-          <Route path="/financing" exact element={<Financing />} />
+          <Route path="/dashboard" exact element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/materials" exact element={<ProtectedRoute><Materials /></ProtectedRoute>} />
+          <Route path="/scheduling" exact element={<ProtectedRoute><Scheduling /></ProtectedRoute>} />
+          <Route path="/financing" exact element={<ProtectedRoute><Financing /></ProtectedRoute>} />
           {/* <Route path="/about" component={AboutPage} /> */}
         </Routes>
       </Layout>
