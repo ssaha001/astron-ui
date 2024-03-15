@@ -1,10 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Layout from "./views/Layout/Layout";
-import LandingPage from "./views/LandingPage/LandingPage";
-import Dashboard from "./views/Dashboard/Dashboard";
-import Materials from "./views/Materials/Materials";
+import { Layout, LandingPage, Dashboard, Materials, Scheduling } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //import AboutPage from "./AboutPage";
 
 function App() {
@@ -17,6 +15,7 @@ function App() {
           <Route path="/signin" exact element={<Signin />} />
           <Route path="/dashboard" exact element={<Dashboard />} />
           <Route path="/materials" exact element={<Materials />} />
+          <Route path="/scheduling" exact element={<Scheduling />} />
           {/* <Route path="/about" component={AboutPage} /> */}
         </Routes>
       </Layout>

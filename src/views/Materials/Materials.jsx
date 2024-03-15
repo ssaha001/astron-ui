@@ -14,7 +14,7 @@ import VendorList from "../../Data/vendorList.json";
 import StarRatings from "react-star-ratings";
 import Map from "./Map";
 
-const Dashboard = () => {
+const Materials = () => {
   // Sample array of card information
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 6;
@@ -184,4 +184,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Materials;
