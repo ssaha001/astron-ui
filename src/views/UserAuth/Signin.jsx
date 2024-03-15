@@ -11,11 +11,9 @@ const Signin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (authServiceInstance.login(email, password)) {
-      console.log("Login successful");
       navigate("/dashboard");
       // Redirect the user to the dashboard or home page
     } else {
-      console.log("Login failed");
       // Show an error message to the user
     }
   };

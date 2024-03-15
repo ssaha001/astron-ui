@@ -4,6 +4,7 @@ import Layout from "./Layout/Layout";
 import Materials from "./Materials/Materials";
 import Scheduling from "./Scheduling/Scheduling";
 import { Signin, Signup } from "./UserAuth";
+import Financing from "./Financing/Financing";
 
 export {
   Dashboard,
@@ -13,4 +14,5 @@ export {
   Scheduling,
   Signin,
   Signup,
+  Financing,
 };
