@@ -1,3 +1,10 @@
+.header-logo {
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 footer {
   position: relative;
   left: 0;

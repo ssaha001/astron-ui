@@ -9,8 +9,10 @@ function Layout({ children }) {
       <header>
         <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand className="mr-auto">Header - Top Part</Navbar.Brand>
-            <HeaderNavOptions />
+          <Navbar.Brand>
+              <img src="https://live.staticflickr.com/65535/53588292936_8a8853a9ae_o.png" alt="AstroN" className="header-logo" />
+            </Navbar.Brand>   
+           <HeaderNavOptions />
           </Container>
         </Navbar>
       </header>
