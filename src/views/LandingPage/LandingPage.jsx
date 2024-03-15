@@ -12,7 +12,7 @@ function LandingPage() {
             <h1>projects with us!</h1>
             <img src="https://live.staticflickr.com/65535/53588740710_3721fd3c5a_b.jpg" width="500" className="img-fluid" alt="A roof"/>
             <br/>
-     <Button type="button" class="btn btn-lg btn-success mt-3">Go to Dashboard</Button>
+            <Link to="/dashboard" class="btn btn-lg btn-success mt-3">Go to Dashboard</Link>
      </Col>
      </Row>
       </Container>
