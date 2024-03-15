@@ -5,6 +5,9 @@ import StagesPieChart from "../../Charts/StagesPieCharts";
 import ScheduleBarChart from "../../Charts/ScheduleBarChart";
 import stagesPieChartData from "../../Data/stagesPieChartData.json";
 import scheduleBarChartData from "../../Data/scheduleBarChart.json";
+import ScheduleTable from "../../Tables/ScheduleTable";
+import NewsTable from "../../Tables/NewsTable";
+
 
 const Dashboard = () => {
   return (
@@ -14,15 +17,25 @@ const Dashboard = () => {
           <DashboardHeader current={"Dashboard"} />
         </Container>
       </Navbar>
-      <Row style={{ height: "400px" }}>
-        <Col xs={5}>
-          <StagesPieChart data={stagesPieChartData} />
+      <Row>
+      <Col xs={4}>
+          <ScheduleTable />
         </Col>
-        <Col xs={2}>Weather Info</Col>
-        <Col xs={5}>
+        <Col xs={15} md={6}>
           <ScheduleBarChart data={scheduleBarChartData} />
         </Col>
       </Row>
+      <Row>
+      <Col xs={10} md={4}>
+          <StagesPieChart data={stagesPieChartData} />
+        </Col>
+        <Col xs={2}>Weather Info</Col>
+      </Row>
+      <Row>
+      <Col xs={15}>
+          <NewsTable />
+        </Col>
+        </Row>
     </Container>
   );
 };
