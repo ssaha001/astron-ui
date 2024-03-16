@@ -5,6 +5,7 @@ import StagesPieChart from "../../Charts/StagesPieCharts";
 import ScheduleBarChart from "../../Charts/ScheduleBarChart";
 import stagesPieChartData from "../../Data/stagesPieChartData.json";
 import scheduleBarChartData from "../../Data/scheduleBarChart.json";
+import NewsTable from "../../Tables/NewsTable"; // Import the TableComponent
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,14 @@ const Dashboard = () => {
         <Col xs={2}>Weather Info</Col>
         <Col xs={5}>
           <ScheduleBarChart data={scheduleBarChartData} />
+        </Col>
+      </Row>
+      <Row>
+        <h2 class="text-center">Latest Construction News!</h2>
+      <Col xs={12}>
+          <div style={{ maxHeight: "400px", overflowY: "auto" }}>
+            <NewsTable data= {NewsTable} />
+          </div>
         </Col>
       </Row>
     </Container>
