@@ -30,7 +30,8 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
-                <Dashboard />
+                {console.log(user.type)}
+                {user.type==="employee"?(<DashboardEmp />):(<Dashboard />)}
               </ProtectedRoute>
             }
           />

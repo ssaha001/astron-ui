@@ -1,7 +1,7 @@
 [
-  { "name": "John", "location": "New York, USA", "category": "A" },
-  { "name": "Alice", "location": "London, UK", "category": "B" },
-  { "name": "Bob", "location": "Paris, France", "category": "A" },
-  { "name": "Eve", "location": "Tokyo, Japan", "category": "C" },
-  { "name": "Charlie", "location": "Berlin, Germany", "category": "B" }
+  { "name": "ABC", "location": "New York, USA", "phase": "Design" },
+  { "name": "XYZ", "location": "London, UK", "phase": "Completed" },
+  { "name": "DEF", "location": "Paris, France", "phase": "Pre-Design" },
+  { "name": "GHE", "location": "Tokyo, Japan", "phase": "Permitting" },
+  { "name": "IOL", "location": "Berlin, Germany", "phase": "Planning" }
 ]

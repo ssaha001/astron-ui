@@ -37,6 +37,9 @@ const Property = () => {
     const searchRes=project["data"].filter((prj)=>pattern.test(prj["name"]));
     setData(searchRes);
   }
+  useEffect(()=>{
+    setData(project["data"])
+  },[project])
   return (
     <Container>
       <Navbar bg="light" expand="lg">
@@ -96,7 +99,7 @@ const Property = () => {
                     <Card.Body>
                       <Card.Title>{card.name}</Card.Title>
                       <Card.Text>{card.location}</Card.Text>
-                      <Card.Text>Category: {card.category}</Card.Text>
+                      <Card.Text>Phase: {card.phase}</Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>

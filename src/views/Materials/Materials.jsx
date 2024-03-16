@@ -22,13 +22,15 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "../../redux/store";
 import AddRequirementModal from "./AddRequirementModal";
 import SeeRequirementModal from "./SeeRequirementModal";
+import { useDispatch } from "../../redux/store";
+import { fetchAllProperty } from "../../redux/slices/requirementSlice";
 
 const Materials = () => {
   // Sample array of card information
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 6;
   const totalPages = Math.ceil(VendorList.length / cardsPerPage);
-  const { supplier } = useSelector((state) => state);
+  const { supplier, user } = useSelector((state) => state);
   const [data, setData] = useState(supplier["data"]);
   const [isDataReady, setIsDataReady] = useState(false);
   const[showModal, setShowModal] = useState(false);

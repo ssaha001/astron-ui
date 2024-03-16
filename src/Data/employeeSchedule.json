@@ -1,0 +1,12 @@
+[
+  { "date": "2024-03-16", "location": "GTA South", "time": "9:00AM-5:00PM" },
+  { "date": "2022-03-19", "location": "GTA East", "time": "9:00AM-5:00PM" },
+  { "date": "2023-03-21", "location": "GTA North", "time": "9:00AM-5:00PM" },
+  { "date": "2022-03-22", "location": "GTA West", "time": "9:00AM-5:00PM" },
+  { "date": "2023-03-23", "location": "GTA", "time": "9:00AM-5:00PM" },
+  { "date": "2023-03-24", "location": "GTA East", "time": "9:00AM-5:00PM" },
+  { "date": "2022-03-25", "location": "GTA South", "time": "9:00AM-5:00PM" },
+  { "date": "2023-03-27", "location": "GTA West", "time": "9:00AM-5:00PM" },
+  { "date": "2022-03-29", "location": "GTA North", "time": "9:00AM-5:00PM" },
+  { "date": "2023-03-30", "location": "GTA", "time": "9:00AM-5:00PM" }
+]
