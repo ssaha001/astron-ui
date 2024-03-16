@@ -25,7 +25,7 @@ const Dashboard = () => {
         </Col>
       </Row>
       <Row>
-        <h2 class="text-center">Latest Construction News!</h2>
+        <h2 className="text-center">Latest Construction News!</h2>
       <Col xs={12}>
           <div style={{ maxHeight: "400px", overflowY: "auto" }}>
             <NewsTable data= {NewsTable} />
