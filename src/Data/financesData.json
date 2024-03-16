@@ -31,5 +31,111 @@
     { "date": "Mar 12", "amount": 230, "description": "Online course" },
     { "date": "Mar 13", "amount": 240, "description": "Sponsorship" },
     { "date": "Mar 14", "amount": 250, "description": "Gift" }
-  ]
+  ],
+    "assets": [
+      { "date": "June 01", "amount": 4000, "description": "Laptop Purchases" },
+      { "date": "June 02", "amount": 12000, "description": "Machinery Acquisition" },
+      { "date": "June 03", "amount": 7000, "description": "Office Technology Upgrade" },
+      { "date": "June 04", "amount": 25000, "description": "Property Down Payment" },
+      { "date": "June 05", "amount": 3000, "description": "New Software Licenses" },
+      { "date": "June 06", "amount": 5000, "description": "Vehicle Upgrade" },
+      { "date": "June 07", "amount": 2000, "description": "New Office Furniture" },
+      { "date": "June 08", "amount": 15000, "description": "Investment in Stocks" },
+      { "date": "June 09", "amount": 8000, "description": "Warehouse Equipment" },
+      { "date": "June 10", "amount": 4000, "description": "Mobile Devices" }
+    ],
+    "liabilities": [
+      { "date": "June 01", "amount": 8000, "description": "Loan Installment" },
+      { "date": "June 02", "amount": 3000, "description": "Credit Line Drawdown" },
+      { "date": "June 03", "amount": 4500, "description": "Accounts Payable" },
+      { "date": "June 04", "amount": 6000, "description": "Mortgage Repayment" },
+      { "date": "June 05", "amount": 2000, "description": "Utilities Arrears" },
+      { "date": "June 06", "amount": 3500, "description": "Vendor Payments Due" },
+      { "date": "June 07", "amount": 4000, "description": "Tax Payment" },
+      { "date": "June 08", "amount": 1000, "description": "Overdue Invoices" },
+      { "date": "June 09", "amount": 2500, "description": "Insurance Premiums" },
+      { "date": "June 10", "amount": 5000, "description": "Short-Term Loan" }
+    ],
+      "revenueStreams": [
+        { "date": "July 01", "amount": 10000, "description": "Main Product Sales" },
+        { "date": "July 02", "amount": 5000, "description": "Service Contracts" },
+        { "date": "July 03", "amount": 12000, "description": "Consultancy Fees" },
+        { "date": "July 04", "amount": 8000, "description": "Secondary Product Sales" },
+        { "date": "July 05", "amount": 7000, "description": "Online Course Revenue" },
+        { "date": "July 06", "amount": 9000, "description": "Subscription Services" },
+        { "date": "July 07", "amount": 11000, "description": "Affiliate Marketing Income" },
+        { "date": "July 08", "amount": 6000, "description": "Advertising Revenue" },
+        { "date": "July 09", "amount": 13000, "description": "Specialized Workshop Income" },
+        { "date": "July 10", "amount": 5500, "description": "E-book Sales" },
+        { "date": "July 11", "amount": 14500, "description": "Custom Project Revenue" },
+        { "date": "July 12", "amount": 7500, "description": "Royalty Income" },
+        { "date": "July 13", "amount": 8500, "description": "Digital Product Sales" },
+        { "date": "July 14", "amount": 5000, "description": "Physical Store Sales" }
+      ],
+      "operationalCosts": [
+        { "date": "July 01", "amount": 2000, "description": "Rent" },
+        { "date": "July 02", "amount": 1500, "description": "Utilities" },
+        { "date": "July 03", "amount": 1000, "description": "Office Supplies" },
+        { "date": "July 04", "amount": 2500, "description": "Marketing and Advertising" },
+        { "date": "July 05", "amount": 3000, "description": "Employee Salaries" },
+        { "date": "July 06", "amount": 2200, "description": "Maintenance" },
+        { "date": "July 07", "amount": 1800, "description": "Insurance" },
+        { "date": "July 08", "amount": 1200, "description": "Software Subscriptions" },
+        { "date": "July 09", "amount": 800, "description": "Internet" },
+        { "date": "July 10", "amount": 700, "description": "Telephone" },
+        { "date": "July 11", "amount": 2300, "description": "Transportation Costs" },
+        { "date": "July 12", "amount": 1100, "description": "Professional Fees" },
+        { "date": "July 13", "amount": 1600, "description": "Repair Costs" },
+        { "date": "July 14", "amount": 2000, "description": "Research and Development" }
+      ],
+        "propertyMaintenance": [
+          { "date": "Sep 01", "amount": 500, "description": "Plumbing Repairs at Property A" },
+          { "date": "Sep 02", "amount": 750, "description": "Painting and Decoration at Property B" },
+          { "date": "Sep 03", "amount": 300, "description": "Garden Maintenance at Property C" },
+          { "date": "Sep 04", "amount": 400, "description": "Electrical Check at Property D" },
+          { "date": "Sep 05", "amount": 600, "description": "Roof Inspection at Property E" },
+          { "date": "Sep 06", "amount": 1000, "description": "HVAC System Repair at Property F" },
+          { "date": "Sep 07", "amount": 450, "description": "Window Replacement at Property G" },
+          { "date": "Sep 08", "amount": 350, "description": "Security System Update at Property H" },
+          { "date": "Sep 09", "amount": 500, "description": "Appliance Replacement at Property I" },
+          { "date": "Sep 10", "amount": 800, "description": "Flooring Upgrade at Property J" }
+        ],
+        "rentalIncome": [
+          { "date": "Sep 01", "amount": 2000, "description": "Rent Collection from Property A" },
+          { "date": "Sep 02", "amount": 1800, "description": "Rent Collection from Property B" },
+          { "date": "Sep 03", "amount": 1500, "description": "Rent Collection from Property C" },
+          { "date": "Sep 04", "amount": 1600, "description": "Rent Collection from Property D" },
+          { "date": "Sep 05", "amount": 2200, "description": "Rent Collection from Property E" },
+          { "date": "Sep 06", "amount": 2100, "description": "Rent Collection from Property F" },
+          { "date": "Sep 07", "amount": 1900, "description": "Rent Collection from Property G" },
+          { "date": "Sep 08", "amount": 1700, "description": "Rent Collection from Property H" },
+          { "date": "Sep 09", "amount": 2000, "description": "Rent Collection from Property I" },
+          { "date": "Sep 10", "amount": 1950, "description": "Rent Collection from Property J" }
+        ],
+          "tenantPayments": [
+            { "date": "Oct 01", "amount": 2000, "description": "Late Rent Payment for Unit A1" },
+            { "date": "Oct 02", "amount": 1800, "description": "Rent Payment for Unit B2" },
+            { "date": "Oct 03", "amount": 1500, "description": "Security Deposit for Unit C3" },
+            { "date": "Oct 04", "amount": 1600, "description": "Rent Payment for Unit D4" },
+            { "date": "Oct 05", "amount": 1700, "description": "Rent Payment for Unit E5" },
+            { "date": "Oct 06", "amount": 1400, "description": "Rent Payment for Unit F6" },
+            { "date": "Oct 07", "amount": 1300, "description": "Pet Deposit for Unit G7" },
+            { "date": "Oct 08", "amount": 1900, "description": "Rent Payment for Unit H8" },
+            { "date": "Oct 09", "amount": 1650, "description": "Late Rent Payment for Unit I9" },
+            { "date": "Oct 10", "amount": 2000, "description": "Rent Payment for Unit J10" }
+          ],
+          "serviceCharges": [
+            { "date": "Oct 01", "amount": 100, "description": "Parking Space for Unit A1" },
+            { "date": "Oct 02", "amount": 50, "description": "Fitness Center Access for Unit B2" },
+            { "date": "Oct 03", "amount": 75, "description": "Extra Storage Fee for Unit C3" },
+            { "date": "Oct 04", "amount": 60, "description": "Laundry Services for Unit D4" },
+            { "date": "Oct 05", "amount": 80, "description": "High-Speed Internet for Unit E5" },
+            { "date": "Oct 06", "amount": 55, "description": "Trash Collection for Unit F6" },
+            { "date": "Oct 07", "amount": 70, "description": "Pet Fees for Unit G7" },
+            { "date": "Oct 08", "amount": 65, "description": "Water Bill for Unit H8" },
+            { "date": "Oct 09", "amount": 90, "description": "Heating Bill for Unit I9" },
+            { "date": "Oct 10", "amount": 85, "description": "AC Maintenance for Unit J10" }
+          ]
+              
+
 }

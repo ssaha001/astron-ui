@@ -7,14 +7,17 @@ import {
   Materials,
   Scheduling,
   Financing,
+  DashboardEmp,
   Property,
 } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ProtectedRoute from "./ProtectedRoute";
+import { useSelector } from "./redux/store";
 //import AboutPage from "./AboutPage";
 
 function App() {
+  const { user } = useSelector((state) => state);
   return (
     <Router>
       <Layout>
@@ -27,6 +30,7 @@ function App() {
             exact
             element={
               <ProtectedRoute>
+                {user.type === "employee" ? <DashboardEmp /> : <Dashboard />}
                 <Dashboard />
               </ProtectedRoute>
             }

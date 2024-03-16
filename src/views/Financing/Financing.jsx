@@ -3,6 +3,7 @@ import { Container, Navbar, Row, Col, Button } from "react-bootstrap";
 import { DashboardHeader } from "../../Components";
 import FinancesLineChart from "../../Charts/FinancesLineChart";
 import FinancingList from "./FinancesList";
+import BankCards from "./BankCards";
 
 const Financing = () => {
   const [selectedDate, setSelectedDate] = useState();
@@ -44,6 +45,11 @@ const Financing = () => {
           }}
         >
           <FinancingList dataPoint={selectedDate} />
+        </Col>
+      </Row>
+      <Row>
+      <Col xs={12} md={8} lg={6} style={{ backgroundColor: "#D0EFE8" }}> 
+          <BankCards dataPoint={BankCards}/>
         </Col>
       </Row>
     </Container>
