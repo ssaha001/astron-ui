@@ -17,10 +17,16 @@ export const userSlice = createSlice({
     },
     setEmpPwd:(state, { type, payload }) => {
       state.empPwd=payload;
-    }
+    },
+    resetuser: () => ({
+      name: "",
+      type: "",
+      id: "",
+      empPwd: "",
+    }),
   },
 });
 
-export const { setUser, setEmpPwd } = userSlice.actions;
+export const { setUser, setEmpPwd, resetuser } = userSlice.actions;
 
 export default userSlice.reducer;

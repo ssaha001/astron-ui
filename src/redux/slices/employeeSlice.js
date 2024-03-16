@@ -30,9 +30,12 @@ export const employeeSlice = createSlice({
       state.loading = false;
       // Handle failure, e.g., show an error message
     },
+    resetemployee: () => ({
+      data:[]
+    }),
   },
 });
 
-export const { getEmployeeStart, getEmployeeSuccess, getEmployeeFailure } = employeeSlice.actions;
+export const { getEmployeeStart, getEmployeeSuccess, getEmployeeFailure, resetemployee } = employeeSlice.actions;
 
 export default employeeSlice.reducer;

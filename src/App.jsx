@@ -8,6 +8,7 @@ import {
   Scheduling,
   Financing,
   DashboardEmp,
+  Property,
 } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -30,6 +31,7 @@ function App() {
             element={
               <ProtectedRoute>
                 {user.type === "employee" ? <DashboardEmp /> : <Dashboard />}
+                <Dashboard />
               </ProtectedRoute>
             }
           />
@@ -57,6 +59,15 @@ function App() {
             element={
               <ProtectedRoute>
                 <Financing />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/projects"
+            exact
+            element={
+              <ProtectedRoute>
+                <Property />
               </ProtectedRoute>
             }
           />
