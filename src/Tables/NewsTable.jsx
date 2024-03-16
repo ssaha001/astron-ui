@@ -5,7 +5,7 @@ const TableComponent = () => {
   return (
     <div style={{ maxHeight: "300px", overflowY: "auto" }}>
       <table className="news table">
-        <tbody>
+        <tbody className="table-info">
           <tr>
             <td>
               <p className="text-center">
