@@ -7,13 +7,16 @@ import {
   Materials,
   Scheduling,
   Financing,
+  DashboardEmp,
 } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ProtectedRoute from "./ProtectedRoute";
+import { useSelector } from "./redux/store";
 //import AboutPage from "./AboutPage";
 
 function App() {
+  const { user } = useSelector((state) => state);
   return (
     <Router>
       <Layout>
@@ -21,10 +24,42 @@ function App() {
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/signin" exact element={<Signin />} />
-          <Route path="/dashboard" exact element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-          <Route path="/materials" exact element={<ProtectedRoute><Materials /></ProtectedRoute>} />
-          <Route path="/scheduling" exact element={<ProtectedRoute><Scheduling /></ProtectedRoute>} />
-          <Route path="/financing" exact element={<ProtectedRoute><Financing /></ProtectedRoute>} />
+          <Route
+            path="/dashboard"
+            exact
+            element={
+              <ProtectedRoute>
+                {user.type === "employee" ? <DashboardEmp /> : <Dashboard />}
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/materials"
+            exact
+            element={
+              <ProtectedRoute>
+                <Materials />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/scheduling"
+            exact
+            element={
+              <ProtectedRoute>
+                <Scheduling />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/financing"
+            exact
+            element={
+              <ProtectedRoute>
+                <Financing />
+              </ProtectedRoute>
+            }
+          />
           {/* <Route path="/about" component={AboutPage} /> */}
         </Routes>
       </Layout>
