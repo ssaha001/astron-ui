@@ -4,7 +4,7 @@ import VendorList from "../../Data/vendorList.json";
 import OrderList from "../../Data/OrderList.json";
 import ChatWindow from "./ChatWindow";
 import PastOrders from "./PastOrders";
-import "./VendorDetails.css";
+import "./VendorDetails.css"
 
 const VendorDetails = () => {
   const { name } = useParams();

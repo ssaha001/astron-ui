@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./PastOrders.css"
 
 const PastOrders = ({ pastOrders }) => {
   const [currentPage, setCurrentPage] = useState(1);
