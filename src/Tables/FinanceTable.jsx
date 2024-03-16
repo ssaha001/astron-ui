@@ -12,7 +12,7 @@ const TableComponent = () => {
             </tr>
         <tr>
           <td>
-            <p class="text-center"><strong>Need Financing?</strong></p>
+            <p className="text-center"><strong>Need Financing?</strong></p>
             </td>
         </tr>
         <tr>

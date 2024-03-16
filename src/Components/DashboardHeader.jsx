@@ -10,6 +10,7 @@ const DashboardHeader = ({ current }) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link
+          style={{borderRadius:'5%'}}
             as={Link}
             className={current === "Dashboard" ? "active-link" : ""}
             to="/dashboard"
@@ -17,6 +18,7 @@ const DashboardHeader = ({ current }) => {
             Dashboard
           </Nav.Link>
           <Nav.Link
+          style={{borderRadius:'5%'}}
             as={Link}
             className={current === "Projects" ? "active-link" : ""}
             to="/projects"
@@ -24,6 +26,7 @@ const DashboardHeader = ({ current }) => {
             Projects
           </Nav.Link>
           <Nav.Link
+          style={{borderRadius:'5%'}}
             as={Link}
             className={current === "Get Materials" ? "active-link" : ""}
             to="/materials"
@@ -31,6 +34,7 @@ const DashboardHeader = ({ current }) => {
             Get Materials
           </Nav.Link>
           <Nav.Link
+          style={{borderRadius:'5%'}}
             as={Link}
             className={current === "Financing" ? "active-link" : ""}
             to="/financing"
@@ -38,6 +42,7 @@ const DashboardHeader = ({ current }) => {
             Financing
           </Nav.Link>
           <Nav.Link
+          style={{borderRadius:'10%'}}
             as={Link}
             className={current === "Scheduling" ? "active-link" : ""}
             to="/scheduling"

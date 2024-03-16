@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "vendor": "Freyman Inc.",
+      "item": "Product A",
+      "quantity": 2,
+      "price": 10,
+      "date": "2023-10-15"
+    },
+    {
+      "id": 2,
+      "vendor": "Freyman Inc.",
+      "item": "Product B",
+      "quantity": 1,
+      "price": 15,
+      "date": "2023-10-16"
+    },
+    {
+      "id": 3,
+      "vendor": "Freyman Inc.",
+      "item": "Product C",
+      "quantity": 3,
+      "price": 20,
+      "date": "2023-10-17"
+    },
+    {
+      "id": 4,
+      "vendor": "Freyman Inc.",
+      "item": "Product D",
+      "quantity": 1,
+      "price": 12,
+      "date": "2023-10-18"
+    },
+    {
+      "id": 5,
+      "vendor": "Freyman Inc.",
+      "item": "Product E",
+      "quantity": 2,
+      "price": 18,
+      "date": "2023-10-19"
+    }
+  ]
+  

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Navbar, Row, Col, Table } from "react-bootstrap";
 import { DashboardHeader } from "../../Components";
 import StagesPieChart from "../../Charts/StagesPieCharts";
 import ScheduleBarChart from "../../Charts/ScheduleBarChart";
@@ -15,20 +15,50 @@ const Dashboard = () => {
           <DashboardHeader current={"Dashboard"} />
         </Container>
       </Navbar>
-      <Row style={{ height: "400px" }}>
-        <Col xs={5}>
-          <StagesPieChart data={stagesPieChartData} />
+      <Row style={{padding:'3%'}}>
+        <Col>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th colSpan={2} style={{ textAlign: "center" }}>
+                  TO DO
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>March 17th </td>
+                <td>
+                  Finalize design and construction plans for current property
+                  developments.
+                </td>
+              </tr>
+              <tr>
+                <td>March 21th</td>
+                <td>Review financials and budget for ongoing projects.</td>
+              </tr>
+              <tr>
+                <td>March 25th</td>
+                <td>Yearly Review meeting with stakeholders.</td>
+              </tr>
+            </tbody>
+          </Table>
         </Col>
-        <Col xs={2}>Weather Info</Col>
-        <Col xs={5}>
+      </Row>
+      <Row style={{ height: "400px" }}>
+        <Col xs={7} style={{ backgroundColor:'white'}}>
+          <StagesPieChart data={stagesPieChartData}/>
+        </Col>
+        <Col xs={1}></Col>
+        <Col xs={4} style={{ backgroundColor:'white'}}>
           <ScheduleBarChart data={scheduleBarChartData} />
         </Col>
       </Row>
       <Row>
-        <h2 class="text-center">Latest Construction News!</h2>
+        <h2 className="text-center text-white ">Latest Construction News!</h2>
       <Col xs={12}>
           <div style={{ maxHeight: "400px", overflowY: "auto" }}>
-            <NewsTable data= {NewsTable} />
+            <NewsTable data={NewsTable} />
           </div>
         </Col>
       </Row>

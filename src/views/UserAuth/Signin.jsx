@@ -20,7 +20,6 @@ const Signin = () => {
       .then((data) => {
         authServiceInstance.setToken(data["user"]["token"]);
         dispatch(setUser(data["user"]));
-        console.log("This is user", user);
         navigate("/dashboard");
       })
       .catch((err) => console.log(err));
