@@ -16,7 +16,7 @@ function LandingPage() {
             <br/>
             <br/>
             <br/>
-            <Link to="/dashboard" class="btn btn-lg btn-success mt-3">Go to Dashboard</Link>
+            <Link to="/dashboard" className="btn btn-lg btn-success mt-3">Go to Dashboard</Link>
      </Col>
      </Row>
       </Container>

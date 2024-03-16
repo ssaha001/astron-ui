@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Navbar} from "react-bootstrap";
 import "./Layout.css"; // Assuming you have a separate CSS file for styling
 import { HeaderNavOptions } from "../../Components";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Layout({ children }) {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function Layout({ children }) {
       <footer id="footer">
         <Navbar expand="lg">
           <Container>
-            <Navbar.Text >Footer - Bottom Part</Navbar.Text>
+            <Navbar.Text > <Link to="" class="btn btn-lg  bg-transparent text-white">About Us</Link></Navbar.Text>
           </Container>
         </Navbar>
       </footer>
