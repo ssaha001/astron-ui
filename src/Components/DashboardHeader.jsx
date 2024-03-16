@@ -42,7 +42,7 @@ const DashboardHeader = ({ current }) => {
             Financing
           </Nav.Link>
           <Nav.Link
-          style={{borderRadius:'10%'}}
+          style={{borderRadius:'5%'}}
             as={Link}
             className={current === "Scheduling" ? "active-link" : ""}
             to="/scheduling"
