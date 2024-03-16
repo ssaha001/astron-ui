@@ -112,5 +112,191 @@
     "sustainability": 3,
     "isVerified": true,
     "location": { "lat": 43.635728157024396, "lng": -79.3115807801694 }
-  }
+  },
+  [
+    {
+      "name": "Freyman Inc.",
+      "rating": 4,
+      "address": "23 Highland str, Toronto",
+      "phone": "444-333-222",
+      "email": "freyman@inc.ca",
+      "delivery": 50,
+      "sustainability": 4,
+      "isVerified": false,
+      "location": { "lat": 43.69250166207535, "lng": -79.34274361395893 }
+    },
+    {
+      "name": "Wottsil Inc.",
+      "rating": 2,
+      "address": "23 Highland str, Toronto",
+      "email": "wottsil5@inc.ca",
+      "phone": "666-333-222",
+      "delivery": 52,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.61217158344519, "lng": -79.31762051510287 }
+    },
+    {
+      "name": "PNTL Inc.",
+      "rating": 5,
+      "address": "43 Stanleydrew, Vaughan",
+      "email": "ptnl112@inc.ca",
+      "phone": "444-333-111",
+      "delivery": 48,
+      "sustainability": 5,
+      "isVerified": false,
+      "location": { "lat": 43.6986708401085, "lng": -79.28889005207829 }
+    },
+    {
+      "name": "Skatresd Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "email": "skatresd@inc.ca",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.65398637163684, "lng": -79.3678843984154 }
+    },
+    {
+      "name": "S Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.70505211883603, "lng": -79.34680229616396 }
+    },
+    {
+      "name": "Sk Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.63109084752154, "lng": -79.28538692126274 }
+    },
+    {
+      "name": "Ska Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.628318710694245, "lng": -79.33627408788328 }
+    },
+    {
+      "name": "Skat Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.68510109883438, "lng": -79.32285467815592 }
+    },
+    {
+      "name": "Skatr Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.647382487846485, "lng": -79.33932014800784 }
+    },
+    {
+      "name": "Skatre Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.667973987599375, "lng": -79.32874261388088 }
+    },
+    {
+      "name": "Skatres Inc.",
+      "rating": 4,
+      "address": "78 Growick Ave, Toronto",
+      "phone": "888-333-222",
+      "delivery": 57,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.635728157024396, "lng": -79.3115807801694 }
+    },
+    {
+      "name": "Urban Build Co.",
+      "rating": 3.8,
+      "address": "2301 Queen St E, Toronto",
+      "phone": "416-444-2020",
+      "delivery": 30,
+      "sustainability": 2,
+      "isVerified": true,
+      "location": { "lat": 43.672710, "lng": -79.287673 }
+    },
+    {
+      "name": "Solid Ground PM",
+      "rating": 5,
+      "address": "47 Yonge St, Toronto",
+      "phone": "416-123-4567",
+      "delivery": 25,
+      "sustainability": 5,
+      "isVerified": false,
+      "location": { "lat": 43.648688, "lng": -79.378117 }
+    },
+    {
+      "name": "Cornerstone Inc.",
+      "rating": 4.2,
+      "address": "789 Bloor St W, Toronto",
+      "phone": "647-789-1234",
+      "delivery": 40,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.661885, "lng": -79.429702 }
+    },
+    {
+      "name": "Maple Leaf Project Management",
+      "rating": 5,
+      "address": "47 Yonge St, Toronto",
+      "phone": "416-123-4567",
+      "delivery": 25,
+      "sustainability": 5,
+      "isVerified": false,
+      "location": { "lat": 43.648688, "lng": -79.378117 }
+    },
+    {
+      "name": "City Build Consultants",
+      "rating": 3.8,
+      "address": "2301 Queen St E, Toronto",
+      "phone": "416-444-2020",
+      "delivery": 30,
+      "sustainability": 2,
+      "isVerified": true,
+      "location": { "lat": 43.672710, "lng": -79.287673 }
+    },
+    {
+      "name": "Ontario Site Planners",
+      "rating": 4.2,
+      "address": "789 Bloor St W, Toronto",
+      "phone": "647-789-1234",
+      "delivery": 40,
+      "sustainability": 3,
+      "isVerified": true,
+      "location": { "lat": 43.661885, "lng": -79.429702 }
+    }, 
+    {
+      "name": "GTA Construction Leads",
+      "rating": 4.7,
+      "address": "33 King St, Toronto",
+      "phone": "416-987-6543",
+      "delivery": 35,
+      "sustainability": 4,
+      "isVerified": false,
+      "location": { "lat": 43.648960, "lng": -79.377550 }
+    } 
+  ] 
 ]
