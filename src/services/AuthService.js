@@ -1,3 +1,8 @@
+import { resetemployee } from "../redux/slices/employeeSlice";
+import { resetproject } from "../redux/slices/projectSlice";
+import { resetuser } from "../redux/slices/userSlice";
+import { useDispatch } from "../redux/store";
+
 class AuthService {
   constructor() {
     this.isAuthenticated = false;
@@ -14,6 +19,7 @@ class AuthService {
 
   logout() {
     this.isAuthenticated = false;
+
     localStorage.removeItem(this.tokenKey);
   }
 
@@ -22,9 +28,10 @@ class AuthService {
   }
 
   isUserAuthenticated() {
-    if (localStorage.getItem(this.tokenKey)!==null) {
+    if (localStorage.getItem(this.tokenKey) !== null) {
       return true;
-    }return false;
+    }
+    return false;
   }
 }
 
