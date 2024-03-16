@@ -6,7 +6,6 @@ import authServiceInstance from './services/AuthService';
 const ProtectedRoute = ({children}) => {
     const user = useSelector((state) => state.user);
     let location = useLocation();
-    console.log(authServiceInstance.isUserAuthenticated())
     if(!authServiceInstance.isUserAuthenticated()) {
         return <Navigate to="/signin"/>
     }

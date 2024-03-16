@@ -1,0 +1,10 @@
+[
+    { "name": "KSH", "interest": 10, "years": 15 },
+    { "name": "ME", "interest": 7.5, "years": 20 },
+    { "name": "SWL", "interest": 9, "years": 25 },
+    { "name": "ME", "interest": 7.5, "years": 20 },
+    { "name": "ME", "interest": 6.8, "years": 22 },
+    { "name": "SWL", "interest": 9, "years": 25 },
+    { "name": "SWL", "interest": 8.2, "years": 30 },
+    { "name": "SWL", "interest": 9.8, "years": 18 }
+  ]

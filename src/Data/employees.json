@@ -210,5 +210,70 @@
       "location": "Queen street",
       "time": "9am-5pm"
     }
+  },
+  {
+    "2024-04-01": "Available",
+    "2024-04-02": "Unavailable",
+    "2024-04-03": {
+      "location": "Downtown Office",
+      "time": "10am-6pm"
+    },
+    "2024-04-04": "Available",
+    "2024-04-05": {
+      "location": "Remote",
+      "time": "8am-4pm"
+    }
+  },
+  {
+    "2024-04-01": "Available",
+    "2024-04-02": "Unavailable",
+    "2024-04-03": {
+      "location": "Downtown Office",
+      "time": "10am-6pm"
+    },
+    "2024-04-04": "Available",
+    "2024-04-05": {
+      "location": "Remote",
+      "time": "8am-4pm"
+    }
+  },
+  {
+    "2024-06-06": "Available",
+    "2024-06-07": "Unavailable",
+    "2024-06-08": {
+      "location": "Main Office",
+      "time": "9am-5pm"
+    },
+    "2024-06-09": "Available",
+    "2024-06-10": {
+      "location": "Field Work",
+      "time": "8am-4pm"
+    }
+  },
+  {
+    "2024-07-15": "Unavailable",
+    "2024-07-16": "Available",
+    "2024-07-17": {
+      "location": "Client Site",
+      "time": "10am-6pm"
+    },
+    "2024-07-18": "Available",
+    "2024-07-19": {
+      "location": "Home Office",
+      "time": "8am-4pm"
+    }
+  },
+  {
+    "2024-08-20": "Available",
+    "2024-08-21": "Unavailable",
+    "2024-08-22": {
+      "location": "East Side Facility",
+      "time": "9am-5pm"
+    },
+    "2024-08-23": "Available",
+    "2024-08-24": {
+      "location": "Off-site Training",
+      "time": "7am-3pm"
+    }
   }
 ]

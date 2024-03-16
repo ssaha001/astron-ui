@@ -10,7 +10,6 @@ import ProjectData from "../../Data/PropertyList.json";
 export const fetchAllProperty = (payload) => async (dispatch) => {
   dispatch(getProjectStart);
   try {
-    console.log(payload)
     const data = await getAllProjects(payload);
     dispatch(getProjectSuccess(data));
   } catch (error) {
