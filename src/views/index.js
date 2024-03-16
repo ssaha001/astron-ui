@@ -17,6 +17,6 @@ export {
   Signin,
   Signup,
   Financing,
-  DashboardEmp
+  DashboardEmp,
   Property
 };
