@@ -25,4 +25,12 @@ footer {
 
 #footer{
   background-color: #0097b2;
+  position:absolute;
+  top: 90%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0097b2;
 }
