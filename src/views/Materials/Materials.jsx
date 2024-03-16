@@ -8,7 +8,8 @@ import {
   Pagination,
   Badge,
   Form,
-  Spinner
+  Spinner,
+  Button,
 } from "react-bootstrap";
 import { DashboardHeader } from "../../Components";
 import CirclesRating from "./CircleRating";
@@ -19,6 +20,8 @@ import VendorCard from "./VendorCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "../../redux/store";
+import AddRequirementModal from "./AddRequirementModal";
+import SeeRequirementModal from "./SeeRequirementModal";
 
 const Materials = () => {
   // Sample array of card information
@@ -28,6 +31,8 @@ const Materials = () => {
   const { supplier } = useSelector((state) => state);
   const [data, setData] = useState(supplier["data"]);
   const [isDataReady, setIsDataReady] = useState(false);
+  const[showModal, setShowModal] = useState(false);
+  const [allRequirementModal, setAllRequiremntModal]=useState(false);
 
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
@@ -113,7 +118,35 @@ const Materials = () => {
             </Form.Group>
           </Form>
         </Col>
+        <Col style={{ display: "flex" }}>
+        <Button
+            bg="light"
+            onClick={() => {
+              setAllRequiremntModal(true);
+            }}
+            style={{ marginLeft: "auto" }}
+          >
+            See All Requirement
+          </Button>
+          <Button
+            bg="light"
+            onClick={() => {
+              setShowModal(true);
+            }}
+            style={{ marginLeft: "auto" }}
+          >
+            Post a Requirement
+          </Button>
+        </Col>
       </Row>
+      <AddRequirementModal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+      />
+      <SeeRequirementModal
+        show={allRequirementModal}
+        onHide={() => setAllRequiremntModal(false)}
+      />
       {isDataReady ? (
         <Row>
           <Col md={6}>
