@@ -29,7 +29,6 @@ const Scheduling = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedEmp, setSelectedEmp]= useState('');
   const dates = [];
-  console.log(user);
 
   for (let i = -1; i < 7; i++) {
     const date = new Date();
@@ -56,9 +55,7 @@ const Scheduling = () => {
     addEmployee({ ...body, user: user.id })
       .then((data) => {
         dispatch(setEmpPwd(data["emp"]["password"]));
-        console.log("This is user id", user.id);
         dispatch(fetchEmployee(user.id));
-        console.log("This is emplyee", employee);
         setShowPwdModal(true);
       })
       .catch((err) => {

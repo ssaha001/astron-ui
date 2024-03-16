@@ -44,7 +44,6 @@ const UpdateScheduleModal = ({ show, onHide, date, emp }) => {
     )}-${convertTo12HourFormat(convertedEndTime)}`;
     assignEmployee({ location: location, time: dateString }, emp.id, date)
       .then((data) => {
-        console.log(data);
         dispatch(fetchEmployee(user.id))
       })
       .catch((err) => console.log(err));

@@ -8,7 +8,8 @@
     "delivery": 45,
     "sustainability": 4,
     "isVerified": true,
-    "location": { "lat": 43.65291451894456, "lng": -79.38436889647277 }
+    "location": { "lat": 43.65291451894456, "lng": -79.38436889647277 },
+    "materials": ["wood", "glass", "steel"]
   },
   {
     "name": "EcoHarvest Co.",
@@ -19,7 +20,8 @@
     "delivery": 42,
     "sustainability": 5,
     "isVerified": true,
-    "location": { "lat": 43.5890455133715, "lng": -79.64413903284312 }
+    "location": { "lat": 43.5890452, "lng": -79.6441198 },
+    "materials": ["wood", "glass", "concrete"]
   },
   {
     "name": "NatureNurture Foods",
@@ -30,7 +32,8 @@
     "delivery": 50,
     "sustainability": 5,
     "isVerified": true,
-    "location": { "lat": 43.73153717422788, "lng": -79.76262204295422 }
+    "location": { "lat": 43.4642578, "lng": -79.6923028 },
+    "materials": ["drywall", "paint"]
   },
   {
     "name": "OrganicBloom Farms",
@@ -41,10 +44,11 @@
     "delivery": 48,
     "sustainability": 4,
     "isVerified": true,
-    "location": { "lat": 43.65467446752848, "lng": -79.3840655904497 }
+    "location": { "lat": 43.7713016, "lng": -79.2564425 },
+    "materials": ["lights", "wires", "switches"]
   },
   {
-    "name": "SustainFresh Produce",
+    "name": "SustainFresh Products",
     "rating": 4,
     "address": "19 Willow Avenue, Toronto",
     "email": "info@sustainfreshproduce.ca",
@@ -52,6 +56,7 @@
     "delivery": 47,
     "sustainability": 4,
     "isVerified": true,
-    "location": { "lat": 43.65322510616352, "lng": -79.38383595198419 }
+    "location": { "lat": 43.850856, "lng": -79.020373 },
+    "materials": ["wood", "taps", "pipes"]
   }
 ]

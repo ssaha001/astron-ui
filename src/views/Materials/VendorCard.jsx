@@ -12,7 +12,9 @@ const VendorCard = ({ cardInfo }) => {
 
   return (
     <Card className="mb-3">
-      <Card.Body as={Link} to={`/vendor/${makeUrlFriendly(cardInfo.name)}`}> {/* Use Link to navigate */}
+      <Card.Body as={Link} to={`/vendor/${makeUrlFriendly(cardInfo.name)}`}>
+        {" "}
+        {/* Use Link to navigate */}
         {cardInfo.isVerified && (
           <Badge
             pill
@@ -52,6 +54,16 @@ const VendorCard = ({ cardInfo }) => {
           <b>Sustainability:</b>{" "}
           <CirclesRating rating={cardInfo.sustainability} />
         </Card.Text>
+        {cardInfo?.matches?.length > 0 && (
+          <Card.Text>
+            {" "}
+            {cardInfo?.matches.map((material, index) => (
+              <Badge key={index} bg="primary" className="me-1">
+              {material}
+            </Badge>
+            ))}
+          </Card.Text>
+        )}
       </Card.Body>
     </Card>
   );

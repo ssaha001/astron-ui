@@ -1,7 +1,6 @@
 import { BASE_URL, EXTENSION, USERS } from "../constant";
 export const signupUser = async (formData) => {
   try {
-    console.log(`${BASE_URL}${EXTENSION}${USERS}/signup`);
     const response = await fetch(`${BASE_URL}${EXTENSION}${USERS}/signup`, {
       method: "POST",
       headers: {
@@ -19,7 +18,6 @@ export const signupUser = async (formData) => {
 
 export const signinUser = async (formData) => {
   try {
-    console.log(`${BASE_URL}${EXTENSION}${USERS}/signup`);
     const response = await fetch(`${BASE_URL}${EXTENSION}${USERS}/login`, {
       method: "POST",
       headers: {

@@ -19,7 +19,6 @@ const BankCards = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     // Handle form submission logic here, if needed
-    console.log("Submitted number:", number);
   };
 
   return (
