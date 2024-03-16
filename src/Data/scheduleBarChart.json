@@ -6,5 +6,41 @@
   {
     "name": "Available",
     "data": [53, 32, 33, 52, 13]
+  },
+  {
+    "name": "Completed",
+    "data": [30, 45, 28, 50, 33]
+  },
+  {
+    "name": "Delayed",
+    "data": [10, 15, 8, 12, 20]
+  },
+  {
+    "name": "InProgress",
+    "data": [42, 38, 45, 55, 60]
+  },
+  {
+    "name": "OverBudget",
+    "data": [25, 40, 35, 45, 50]
+  },
+  {
+    "name": "UnderBudget",
+    "data": [20, 18, 15, 22, 25]
+  },
+  {
+    "name": "ResourceAllocation",
+    "data": [48, 55, 60, 52, 58]
+  },
+  {
+    "name": "RiskAssessment",
+    "data": [15, 20, 25, 18, 22]
+  },
+  {
+    "name": "ClientSatisfaction",
+    "data": [75, 85, 80, 90, 95]
+  },
+  {
+    "name": "TeamPerformance",
+    "data": [67, 70, 65, 72, 76]
   }
 ]
