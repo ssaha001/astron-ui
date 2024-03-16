@@ -32,3 +32,9 @@
   transform: translateX(-50%);
   white-space: nowrap;
 }
+
+html, body {
+  background-color: #0097b2;
+  height: 100%;
+  width: 100%;
+}
