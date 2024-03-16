@@ -24,7 +24,7 @@ function Layout({ children }) {
       <footer id="footer">
         <Navbar expand="lg">
           <Container>
-            <Navbar.Text > <Link to="/dashboard" class="btn btn-lg  bg-transparent text-white">About Us</Link></Navbar.Text>
+            <Navbar.Text > <Link to="" class="btn btn-lg  bg-transparent text-white">About Us</Link></Navbar.Text>
           </Container>
         </Navbar>
       </footer>
