@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <div className="layout">
       <header>
-        <Navbar bg="light" expand="lg">
+        <Navbar  expand="lg" id="nav-bar">
           <Container>
           <Navbar.Brand>
               <img src="https://live.staticflickr.com/65535/53588292936_8a8853a9ae_o.png" alt="AstroN" className="header-logo" />
@@ -17,12 +17,12 @@ function Layout({ children }) {
         </Navbar>
       </header>
       <main>
-        <Container>{children}</Container>
+        <Container id={"container-id"}>{children}</Container>
       </main>
-      <footer>
-        <Navbar bg="light" expand="lg">
+      <footer id="footer">
+        <Navbar expand="lg">
           <Container>
-            <Navbar.Text>Footer - Bottom Part</Navbar.Text>
+            <Navbar.Text >Footer - Bottom Part</Navbar.Text>
           </Container>
         </Navbar>
       </footer>
