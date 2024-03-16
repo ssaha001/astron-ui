@@ -10,12 +10,12 @@ const HeaderNavOptions = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLogout = () => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    dispatch(resetemployee());
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    dispatch(resetproject());
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    dispatch(resetuser());
+    // // eslint-disable-next-line react-hooks/rules-of-hooks
+    // dispatch(resetemployee());
+    // // eslint-disable-next-line react-hooks/rules-of-hooks
+    // dispatch(resetproject());
+    // // eslint-disable-next-line react-hooks/rules-of-hooks
+    // dispatch(resetuser());
     authServiceInstance.logout();
     navigate("/");
   };

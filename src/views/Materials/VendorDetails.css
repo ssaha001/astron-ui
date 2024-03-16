@@ -1,0 +1,37 @@
+.vendor-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .vendor-details-wrapper {
+    width: 65%; /* Adjust the width for vendor details */
+  }
+  
+  .vendor-details {
+    width: 100%;
+    max-width: 700px; /* Limit the maximum width */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-window {
+    width: 30%; /* Adjust the width for the chat window */
+    max-width: 400px; /* Limit the maximum width */
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+  .past-orders {
+    width: 65%; /* Adjust the width for past orders */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  

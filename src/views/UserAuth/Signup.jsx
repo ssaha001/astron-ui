@@ -40,7 +40,6 @@ const Signup = () => {
       });
       authServiceInstance.setToken(res["user"]["token"]);
       dispatch(setUser(res["user"]));
-      console.log(res);
       navigate("/dashboard");
     });
   };
