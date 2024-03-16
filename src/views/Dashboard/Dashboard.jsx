@@ -46,10 +46,11 @@ const Dashboard = () => {
         </Col>
       </Row>
       <Row style={{ height: "400px" }}>
-        <Col xs={7}>
-          <StagesPieChart data={stagesPieChartData} />
+        <Col xs={7} style={{ backgroundColor:'white'}}>
+          <StagesPieChart data={stagesPieChartData}/>
         </Col>
-        <Col xs={5}>
+        <Col xs={1}></Col>
+        <Col xs={4} style={{ backgroundColor:'white'}}>
           <ScheduleBarChart data={scheduleBarChartData} />
         </Col>
       </Row>
