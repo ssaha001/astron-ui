@@ -1,0 +1,7 @@
+[
+  { "name": "John", "location": "New York, USA", "category": "A" },
+  { "name": "Alice", "location": "London, UK", "category": "B" },
+  { "name": "Bob", "location": "Paris, France", "category": "A" },
+  { "name": "Eve", "location": "Tokyo, Japan", "category": "C" },
+  { "name": "Charlie", "location": "Berlin, Germany", "category": "B" }
+]
