@@ -20,11 +20,11 @@ const ChatWindow = ({ vendorName }) => {
   };
 
   return (
-    <div style={{ border: "1px solid #ccc", borderRadius: "5px", padding: "10px", height: "300px" }}>
-      <h3 style={{ textAlign: "center", marginBottom: "20px" }}>Chat with {vendorName}</h3>
-      <div style={{ overflowY: "scroll", maxHeight: "200px" }}>
+    <div style={{ border: "1px solid #ccc", borderRadius: "5px", padding: "10px", height: "300px" , backgroundColor: "white"}}>
+      <h3 style={{ textAlign: "center", marginBottom: "20px"}}>Chat with {vendorName}</h3>
+      <div style={{ overflowY: "scroll", maxHeight: "200px",backgroundColor: "white"}}>
         {messages.map((msg, index) => (
-          <div key={index} style={{ marginBottom: "10px", textAlign: msg.sender === "user" ? "right" : "left" }}>
+          <div key={index} style={{ marginBottom: "10px", textAlign: msg.sender === "user" ? "right" : "left"}}>
             <span>{msg.sender === "user" ? "You: " : `${vendorName}: `}</span>
             {msg.text}
           </div>
