@@ -11,6 +11,7 @@ import {
   Property,
 } from "./views";
 import { Signin, Signup } from "./views/UserAuth";
+import VendorDetails from "./views/Materials/VendorDetails";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ProtectedRoute from "./ProtectedRoute";
 import { useSelector } from "./redux/store";
@@ -21,23 +22,20 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
-          <Route path="/" exact element={<LandingPage />} />
-          <Route path="/signup" exact element={<Signup />} />
-          <Route path="/signin" exact element={<Signin />} />
+        <Routes> {/* Change from Route to Routes */}
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
           <Route
             path="/dashboard"
-            exact
             element={
               <ProtectedRoute>
-                {user.type === "employee" ? <DashboardEmp /> : <Dashboard />}
                 <Dashboard />
               </ProtectedRoute>
             }
           />
           <Route
             path="/materials"
-            exact
             element={
               <ProtectedRoute>
                 <Materials />
@@ -46,7 +44,6 @@ function App() {
           />
           <Route
             path="/scheduling"
-            exact
             element={
               <ProtectedRoute>
                 <Scheduling />
@@ -55,7 +52,6 @@ function App() {
           />
           <Route
             path="/financing"
-            exact
             element={
               <ProtectedRoute>
                 <Financing />
@@ -64,15 +60,14 @@ function App() {
           />
           <Route
             path="/projects"
-            exact
             element={
               <ProtectedRoute>
                 <Property />
               </ProtectedRoute>
             }
           />
-          {/* <Route path="/about" component={AboutPage} /> */}
-        </Routes>
+          <Route path="/vendor/:name" element={<VendorDetails />} /> {/* Change from component to element */}
+        </Routes> {/* Change from Route to Routes */}
       </Layout>
     </Router>
   );
